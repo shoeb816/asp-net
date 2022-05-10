@@ -1,0 +1,25 @@
+##########Tets-Images
+version: '3.7'
+services:
+  asaiapp-web:
+    image: 'asaiapp'
+    container_name: asaiapp-web
+    environment:
+      - TZ=Asia/Dhaka
+    networks:
+         - sdpp01_net
+    ports:
+      - "80:80"
+    restart: always
+    #Volume mounted for database for the storage
+    volumes:
+      - asaiapp-web-reports:/src/reports
+    build:
+      context: "./"
+      dockerfile: "Dockerfile"
+networks:
+   sdpp01_net:
+     name: sdpp01_net
+#Volumes for DB data
+volumes:
+  asaiapp-web-reports:
