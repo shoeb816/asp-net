@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@section metatags {
+    <meta name="author" content="SHOEB AHMED KHAN" />
+    <meta name="application-name" content="Sample Application for Docker" />
+
+}
+
+<div class="text-center" onmousedown='return false;' onselectstart='return false;'>
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">Building A Test Web apps with ASP.NET Core</a>.</p>
+
+
+    <span>Enter 1st Number : </span> <input id="txt_FirstNumber" type="text" name="txtFirst" /> <br /><br />
+    <span>Enter 2nd Number : </span> <input id="txt_SecondNumber" type="text" name="txtSecond" /> <br /><br />
+    <input id="add_Number" type="submit" value="Add" />
+    Copyright &#169 @DateTime.Now.Year
+
+
+</div>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OG2FTCTlG9zSjYp7mm8i/hNnwU/MvqgaqYqVBfbz9jiLxoraQUn3d3+vvvUtmGKDICoHNUhbYG0zHkiT0QAo/w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\shoeb.ahmed\\source\\repos\\AsaIApp\\AsaIApp\\AsaIApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shoeb.ahmed\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}
