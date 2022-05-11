@@ -21,9 +21,31 @@ spec:
       
       containers:
       - image: shoeb0005/asaiapp
+        #image: shoeb0005/asaiapp:tagVersion
         name: asaiapp
         ports:
         - containerPort: 80
         imagePullPolicy: Always
         resources: {}
 status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: asaiapp-deploy
+  name: asaiapp-deploy-svc
+  namespace: asaiapp
+spec:
+  ports:
+  - name: asaiapp-port 
+    port: 80
+    protocol: TCP
+    targetPort: 80
+    nodePort: 31080
+  selector:
+    app: asaiapp-deploy
+  type: NodePort
+status:
+  loadBalancer: {}
