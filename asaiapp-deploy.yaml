@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: asaiapp-deploy
+  name: asaiapp-deploy
+  namespace: asaiapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: asaiapp-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: asaiapp-deploy
+    spec:
+      
+      containers:
+      - image: shoeb0005/asaiapp
+        name: asaiapp
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always
+        resources: {}
+status: {}
