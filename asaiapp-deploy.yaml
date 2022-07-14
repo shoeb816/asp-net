@@ -20,9 +20,10 @@ spec:
     spec:
       
       containers:
-      - image: shoeb0005/asaiapp
-        #image: shoeb0005/asaiapp:tagVersion
-        name: asaiapp
+      - name: asaiapp
+        #image: shoeb0005/asaiapp
+        image: shoeb0005/asaiapp:$TAG_NAME
+        
         ports:
         - containerPort: 80
         imagePullPolicy: Always
