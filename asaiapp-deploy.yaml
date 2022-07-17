@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
+    build_number: ${BUILD_NUMBER}
     app: asaiapp-deploy
   name: asaiapp-deploy
   namespace: asaiapp
