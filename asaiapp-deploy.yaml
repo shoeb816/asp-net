@@ -22,7 +22,7 @@ spec:
       containers:
       - name: asaiapp
         #image: shoeb0005/asaiapp
-        image: shoeb0005/asaiapp:TAG_NAME
+        image: shoeb0005/asaiapp:${TAG_NAME}
         
         ports:
         - containerPort: 80
